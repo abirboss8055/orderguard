@@ -1,0 +1,29 @@
+name: Build WordPress Plugin Zip
+
+on:
+  release:
+    types: [published]
+
+permissions:
+  contents: write
+
+jobs:
+  build-zip:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Package clean orderguard.zip
+        run: |
+          mkdir -p build/orderguard
+          cp orderguard.php README.md build/orderguard/
+          cd build
+          zip -r ../orderguard.zip orderguard
+
+      - name: Attach orderguard.zip to Release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: orderguard.zip
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
