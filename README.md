@@ -7,6 +7,8 @@ A lightweight, single-file WordPress plugin that protects WooCommerce stores fro
 ![PHP](https://img.shields.io/badge/PHP-7.4%2B-777BB4?style=flat-square&logo=php&logoColor=white)
 ![HPOS](https://img.shields.io/badge/WooCommerce_HPOS-Compatible-10B981?style=flat-square)
 
+**Live Landing Page:** [https://abirboss8055.github.io/orderguard/](https://abirboss8055.github.io/orderguard/)
+
 [![Download Latest Version](https://img.shields.io/badge/Download-orderguard.zip-25D366?style=for-the-badge)](https://github.com/abirboss8055/orderguard/releases/latest/download/orderguard.zip)
 
 ---
@@ -26,7 +28,7 @@ OrderGuard stops rapid repeat or fake orders without slowing down your store or 
 
 ## Installation
 
-1. Download the latest ready-to-install **`orderguard.zip`** from the [Releases page](https://github.com/abirboss8055/orderguard/releases/latest) (or click the download button above).
+1. Visit the [OrderGuard Landing Page](https://abirboss8055.github.io/orderguard/) or click the **Download orderguard.zip** button above to grab the latest release.
 2. In your WordPress dashboard, go to **Plugins > Add New Plugin > Upload Plugin**.
 3. Select `orderguard.zip`, click **Install Now**, and then **Activate**.
 4. Navigate to **WooCommerce > OrderGuard** to set your WhatsApp number, pre-filled message, and lock duration.
@@ -45,5 +47,6 @@ orderguard/
 ├── .github/
 │   └── workflows/
 │       └── release-zip.yml    # Automatically packages orderguard.zip on every GitHub Release
+├── index.html                 # Public landing & download page (GitHub Pages)
 ├── orderguard.php             # Complete single-file WordPress plugin
 └── README.md                  # Plugin documentation
