@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OrderGuard | Anti-Fake-Order Plugin for WooCommerce</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-950 text-slate-100 min-h-screen font-sans antialiased">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 py-16">
+        <!-- Hero -->
+        <header class="text-center border-b border-slate-800 pb-12 mb-12">
+            <span class="inline-block text-xs font-mono uppercase tracking-wider px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 mb-4">
+                Free & Open-Source WordPress Plugin
+            </span>
+            <h1 class="text-4xl sm:text-5xl font-bold tracking-tight text-white mb-4">OrderGuard</h1>
+            <p class="text-slate-400 text-base sm:text-lg max-w-2xl mx-auto mb-8">
+                Lightweight WooCommerce protection against duplicate and fake orders. Locks customer IP and device temporarily until an admin updates the order status.
+            </p>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a
+                    href="https://github.com/abirboss8055/orderguard/releases/latest/download/orderguard.zip"
+                    class="w-full sm:w-auto px-7 py-3.5 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white font-semibold text-sm transition-colors"
+                >
+                    Download orderguard.zip (Latest)
+                </a>
+                <a
+                    href="https://github.com/abirboss8055/orderguard"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="w-full sm:w-auto px-7 py-3.5 rounded-lg bg-slate-900 hover:bg-slate-800 text-slate-200 border border-slate-800 font-semibold text-sm transition-colors"
+                >
+                    View on GitHub
+                </a>
+            </div>
+            <p class="text-xs font-mono text-slate-500 mt-4">
+                WordPress 6.0+ &middot; WooCommerce 7.0+ &middot; HPOS Compatible &middot; Single PHP File
+            </p>
+        </header>
+
+        <!-- Features -->
+        <section class="grid grid-cols-1 md:grid-cols-3 gap-5 mb-12">
+            <div class="bg-slate-900/70 border border-slate-800 rounded-xl p-5">
+                <h2 class="text-base font-semibold text-white mb-2">Universal Checkout</h2>
+                <p class="text-sm text-slate-400 leading-relaxed">
+                    Works across Classic WooCommerce Checkout, WooCommerce Block Checkout (Store API), and CartFlows funnels.
+                </p>
+            </div>
+            <div class="bg-slate-900/70 border border-slate-800 rounded-xl p-5">
+                <h2 class="text-base font-semibold text-white mb-2">Smart Auto-Unlock</h2>
+                <p class="text-sm text-slate-400 leading-relaxed">
+                    Locks IP and browser device for your chosen duration, and unlocks instantly when an admin changes status from Processing.
+                </p>
+            </div>
+            <div class="bg-slate-900/70 border border-slate-800 rounded-xl p-5">
+                <h2 class="text-base font-semibold text-white mb-2">WhatsApp Support CTA</h2>
+                <p class="text-sm text-slate-400 leading-relaxed">
+                    Displays a clean lock notice with your custom message and a direct clickable WhatsApp button configured from wp-admin.
+                </p>
+            </div>
+        </section>
+
+        <!-- Quick Install -->
+        <section class="bg-slate-900/70 border border-slate-800 rounded-xl p-6 sm:p-8">
+            <h2 class="text-lg font-semibold text-white mb-4">Quick Installation</h2>
+            <ol class="list-decimal list-inside space-y-2.5 text-sm text-slate-300">
+                <li>Click <strong>Download orderguard.zip</strong> above.</li>
+                <li>In WordPress, go to <strong>Plugins &gt; Add New Plugin &gt; Upload Plugin</strong>.</li>
+                <li>Upload <code class="text-emerald-400">orderguard.zip</code>, install, and activate.</li>
+                <li>Configure your WhatsApp number and lock duration under <strong>WooCommerce &gt; OrderGuard</strong>.</li>
+            </ol>
+        </section>
+    </div>
+</body>
+</html>
